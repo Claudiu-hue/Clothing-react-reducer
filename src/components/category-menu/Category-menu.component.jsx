@@ -4,7 +4,7 @@ import './categories-menu.styles.scss'
 
 const CategoryMenu = ({ categories}) => {
 
- 
+ //dasudgsaduyasigdiasgdddddddddddddddddddddddddddddddd
 
   return (
     <div className="categories-container">
