@@ -1,38 +1,23 @@
 import "./App.css";
-import CategoryMenu from "./components/category-menu/Category-menu.component";
+import Home from "./routes/home/home.component";
+import { Routes, Route } from "react-router-dom";
+import Navigation from "./routes/navigation/navigation.component";
+import Authentication from "./routes/authentication/authentication.component";
+import Shop from "./routes/shop/shop.component";
+import Checkout from "./components/checkout/checkout.component";
+import ProductCategory from "./components/product-category/product-category.component.jsx";
+import ProductCategoryPreview from "./routes/product-category/product-categoryPreview.component";
 
 function App() {
- 
-  const categories = [
-    {
-      id: 1,
-      title: "hats",
-      imageUrl: "https://i.ibb.co/cvpntL1/hats.png",
-    },
-    {
-      id: 2,
-      title: "jackets",
-      imageUrl: "https://i.ibb.co/px2tCc3/jackets.png",
-    },
-    {
-      id: 3,
-      title: "sneakers",
-      imageUrl: "https://i.ibb.co/0jqHpnp/sneakers.png",
-    },
-    {
-      id: 4,
-      title: "womens",
-      imageUrl: "https://i.ibb.co/GCCdy8t/womens.png",
-    },
-    {
-      id: 5,
-      title: "mens",
-      imageUrl: "https://i.ibb.co/R70vBrQ/men.png",
-    },
-  ];
-
   return (
-    <CategoryMenu categories={categories}/>
+    <Routes>
+      <Route path="/" element={<Navigation />}>
+        <Route path="/" element={<Home />} />
+        <Route path="/auth" element={<Authentication />} />
+        <Route path="/checkout" element={<Checkout />} />
+        <Route path="/shop/*" element={<Shop />} />
+      </Route>
+    </Routes>
   );
 }
 

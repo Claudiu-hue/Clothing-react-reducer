@@ -1,18 +1,17 @@
-import React from 'react'
-import CategoryItem from '../category-item/category-item.component';
-import './categories-menu.styles.scss'
+import React from "react";
+import DirectoryItem from "../directory-item/directory-item.component";
+import "./categories-menu.styles.scss";
 
-const CategoryMenu = ({ categories}) => {
-
- //dasudgsaduyasigdiasgdddddddddddddddddddddddddddddddd
+const CategoryMenu = ({ categories }) => {
+  //dasudgsaduyasigdiasgdddddddddddddddddddddddddddddddd
 
   return (
     <div className="categories-container">
-    {categories.map((category) => (
-      <CategoryItem key={category.id} category={category} />
-    ))}
-  </div>
-  )
-}
+      {categories.map((category) => (
+        <DirectoryItem key={category.id} category={category} />
+      ))}
+    </div>
+  );
+};
 
-export default CategoryMenu
+export default CategoryMenu;

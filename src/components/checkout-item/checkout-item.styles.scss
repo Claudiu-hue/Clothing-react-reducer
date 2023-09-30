@@ -1,0 +1,26 @@
+button {
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: white;
+}
+
+.container-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    gap: 10px;
+}
+
+.arrow-left, .arrow-right {
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+span {
+    cursor: pointer;
+}
