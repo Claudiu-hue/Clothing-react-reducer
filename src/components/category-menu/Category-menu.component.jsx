@@ -3,8 +3,6 @@ import DirectoryItem from "../directory-item/directory-item.component";
 import "./categories-menu.styles.scss";
 
 const CategoryMenu = ({ categories }) => {
-  // dasdsadoashidusoaihd
-
   return (
     <div className="categories-container">
       {categories.map((category) => (
