@@ -1,0 +1,35 @@
+.container {
+ margin: auto;
+ width: 65%;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    border-bottom: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: none;
+    font-weight: 400;
+    width: 20%;
+  }
+
+  img {
+    width: 50%;
+
+  }
+  
+  tr:hover {
+    background-color: #f5f5f5;
+  }
+
+.sub-total {
+  float: right;
+}
+  
